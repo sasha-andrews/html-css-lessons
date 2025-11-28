@@ -1,27 +1,27 @@
 # HTML & CSS Components Learning Path - TODO List
 
-## Session 1: Foundation Setup
-- [ ] Set up Project Environment
-  - Create index.html file
-  - Create styles/ directory
-  - Create components/ directory
-  - Create assets/ directory for images and resources
+## Session 1: Foundation Setup ✅ COMPLETE
+- [x] Set up Project Environment
+  - [x] Create index.html file
+  - [x] Create styles/ directory
+  - [x] Create components/ directory
+  - [x] Create assets/ directory for images and resources
 
-- [ ] Learn HTML Semantics
-  - Study different semantic HTML elements:
-    - [ ] header, nav, main, section, article, footer
+- [x] Learn HTML Semantics
+  - [x] Study different semantic HTML elements:
+    - [x] header, nav, main, section, article, footer
     - [ ] figure, figcaption
     - [ ] aside, details, summary
-  - Understand when to use each semantic element
-  - Practice proper nesting of elements
+  - [x] Understand when to use each semantic element
+  - [x] Practice proper nesting of elements
 
-- [ ] Understand CSS Basics
-  - Review fundamental concepts:
-    - [ ] CSS selectors and specificity
-    - [ ] Box model (margin, padding, border)
-    - [ ] Display properties
+- [x] Understand CSS Basics
+  - [x] Review fundamental concepts:
+    - [x] CSS selectors and specificity
+    - [x] Box model (margin, padding, border)
+    - [x] Display properties
     - [ ] Units (px, em, rem, %)
-  - Practice writing efficient CSS selectors
+  - [x] Practice writing efficient CSS selectors
 
 ## Session 2: First Component
 - [ ] Create First Component
