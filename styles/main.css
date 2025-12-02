@@ -104,3 +104,38 @@ footer {
   padding: 20px;
   margin-top: 40px;
 }
+
+
+/* Card Component Styles */
+
+/* Container for all cards */
+.card-container {
+  max-width: 1200px;      /* Keep content readable width */
+  margin: 40px auto;      /* Center and space from top */
+  padding: 20px;          /* Space inside container */
+}
+
+/* Title of the card container */
+.card-container h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 40px;
+  font-size: 2.5em;
+}
+
+/* Individual card styling */
+.card {
+  background-color: white;                      /* White background */
+  border-radius: 8px;                           /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);    /* Subtle shadow */
+  padding: 24px;                                /* Space inside card */
+  margin-bottom: 24px;                          /* Space between cards */
+  transition: all 0.3s ease;                    /* Smooth animations */
+  border-left: 4px solid #3498db;              /* Blue accent stripe */
+}
+
+/* When you hover over a card - it lifts up! */
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+  transform: translateY(-4px);                  /* Move up 4 pixels */
+}
