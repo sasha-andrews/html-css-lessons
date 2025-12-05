@@ -139,3 +139,58 @@ footer {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Stronger shadow */
   transform: translateY(-4px);                  /* Move up 4 pixels */
 }
+
+/* Card content - arranges items vertically */
+.card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Card title styling */
+.card-title {
+  color: #2c3e50;
+  font-size: 1.5em;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+/* Card description text */
+.card-description {
+  color: #555;
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  flex-grow: 1;  /* Takes up remaining space, pushes link to bottom */
+}
+
+/* Card link styling */
+.card-link {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+  align-self: flex-start;  /* Align link to the left */
+  padding: 8px 0;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+/* Link hover effect */
+.card-link:hover {
+  color: #2980b9;
+  border-bottom: 2px solid #3498db;  /* Underline appears on hover */
+}
+
+/* Responsive design - adjust for mobile screens */
+@media (max-width: 768px) {
+  .card-container {
+    padding: 10px;
+  }
+  
+  .card {
+    padding: 16px;
+  }
+  
+  .card-title {
+    font-size: 1.2em;
+  }
+}
