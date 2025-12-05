@@ -1,3 +1,28 @@
+/* CSS Custom Properties (Variables) */
+:root {
+  --primary-color: #3498db;      /* Blue - used for accents and links */
+  --primary-dark: #2980b9;       /* Darker blue - for hover states */
+  --dark-color: #2c3e50;         /* Dark gray - for text and headers */
+  --light-color: #ecf0f1;        /* Light gray - for backgrounds */
+  --text-color: #333;            /* Dark text */
+  --text-light: #555;            /* Medium gray text */
+  --shadow-small: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --shadow-large: 0 8px 16px rgba(0, 0, 0, 0.15);
+  --spacing: 16px;               /* Base spacing unit */
+  --border-radius: 8px;          /* Corner rounding */
+  --transition: all 0.3s ease;   /* Smooth animations */
+  
+  /* Card variant colors */
+  --info-color: #3498db;         /* Blue - information */
+  --info-dark: #2980b9;
+  --success-color: #27ae60;       /* Green - success */
+  --success-dark: #229954;
+  --warning-color: #f39c12;       /* Orange - warning */
+  --warning-dark: #d68910;
+  --danger-color: #e74c3c;        /* Red - danger */
+  --danger-dark: #c0392b;
+}
+
 /* Reset default styles */
 * {
   margin: 0;
@@ -125,19 +150,19 @@ footer {
 
 /* Individual card styling */
 .card {
-  background-color: white;                      /* White background */
-  border-radius: 8px;                           /* Rounded corners */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);    /* Subtle shadow */
-  padding: 24px;                                /* Space inside card */
-  margin-bottom: 24px;                          /* Space between cards */
-  transition: all 0.3s ease;                    /* Smooth animations */
-  border-left: 4px solid #3498db;              /* Blue accent stripe */
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-small);
+  padding: 24px;
+  margin-bottom: 24px;
+  transition: var(--transition);
+  border-left: 4px solid var(--primary-color);
 }
 
 /* When you hover over a card - it lifts up! */
 .card:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Stronger shadow */
-  transform: translateY(-4px);                  /* Move up 4 pixels */
+  box-shadow: var(--shadow-large);
+  transform: translateY(-4px);
 }
 
 /* Card content - arranges items vertically */
@@ -148,7 +173,7 @@ footer {
 
 /* Card title styling */
 .card-title {
-  color: #2c3e50;
+  color: var(--dark-color);
   font-size: 1.5em;
   margin-bottom: 12px;
   font-weight: bold;
@@ -156,28 +181,86 @@ footer {
 
 /* Card description text */
 .card-description {
-  color: #555;
+  color: var(--text-light);
   font-size: 1em;
   line-height: 1.6;
   margin-bottom: 16px;
-  flex-grow: 1;  /* Takes up remaining space, pushes link to bottom */
+  flex-grow: 1;
 }
 
 /* Card link styling */
 .card-link {
-  color: #3498db;
+  color: var(--primary-color);
   text-decoration: none;
   font-weight: bold;
-  align-self: flex-start;  /* Align link to the left */
+  align-self: flex-start;
   padding: 8px 0;
   border-bottom: 2px solid transparent;
-  transition: all 0.3s ease;
+  transition: var(--transition);
 }
 
 /* Link hover effect */
 .card-link:hover {
-  color: #2980b9;
-  border-bottom: 2px solid #3498db;  /* Underline appears on hover */
+  color: var(--primary-dark);
+  border-bottom: 2px solid var(--primary-color);
+}
+
+/* ===== CARD VARIANTS ===== */
+
+/* Info Card (Blue) */
+.card-info {
+  border-left-color: var(--info-color);
+}
+
+.card-info .card-link {
+  color: var(--info-color);
+}
+
+.card-info .card-link:hover {
+  color: var(--info-dark);
+  border-bottom-color: var(--info-color);
+}
+
+/* Success Card (Green) */
+.card-success {
+  border-left-color: var(--success-color);
+}
+
+.card-success .card-link {
+  color: var(--success-color);
+}
+
+.card-success .card-link:hover {
+  color: var(--success-dark);
+  border-bottom-color: var(--success-color);
+}
+
+/* Warning Card (Orange) */
+.card-warning {
+  border-left-color: var(--warning-color);
+}
+
+.card-warning .card-link {
+  color: var(--warning-color);
+}
+
+.card-warning .card-link:hover {
+  color: var(--warning-dark);
+  border-bottom-color: var(--warning-color);
+}
+
+/* Danger Card (Red) */
+.card-danger {
+  border-left-color: var(--danger-color);
+}
+
+.card-danger .card-link {
+  color: var(--danger-color);
+}
+
+.card-danger .card-link:hover {
+  color: var(--danger-dark);
+  border-bottom-color: var(--danger-color);
 }
 
 /* Responsive design - adjust for mobile screens */
