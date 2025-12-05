@@ -23,22 +23,24 @@
     - [ ] Units (px, em, rem, %)
   - [x] Practice writing efficient CSS selectors
 
-## Session 2: First Component
-- [ ] Create First Component
-  - Build a text card component:
-    - [ ] HTML structure
-    - [ ] Semantic elements
-    - [ ] Proper class naming
-  - Add meaningful content
-  - Ensure accessibility
+## Session 2: First Component ✅ COMPLETE
+- [x] Create First Component
+  - [x] Build a text card component:
+    - [x] HTML structure
+    - [x] Semantic elements
+    - [x] Proper class naming
+  - [x] Add meaningful content
+  - [x] Ensure accessibility
 
-- [ ] Style Text Card Component
-  - Apply basic styles:
-    - [ ] Typography
-    - [ ] Spacing
-    - [ ] Colors
-    - [ ] Borders and shadows
-  - Test different content lengths
+- [x] Style Text Card Component
+  - [x] Apply basic styles:
+    - [x] Typography
+    - [x] Spacing
+    - [x] Colors
+    - [x] Borders and shadows
+  - [x] Test different content lengths
+  - [x] Hover effects working
+  - [x] Link styling with interactions
 
 ## Session 3: Refinement
 - [ ] Make Component Reusable
