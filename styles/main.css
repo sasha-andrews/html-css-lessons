@@ -270,6 +270,39 @@ gap: 24px;
   border-bottom-color: var(--danger-color);
 }
 
+/* Hero responsive adjustments */
+@media (max-width: 768px) {
+  .hero {
+    padding: 50px 20px;
+  }
+  
+  .hero h2 {
+    font-size: 2em;
+  }
+  
+  .hero p {
+    font-size: 1em;
+  }
+  
+  .featured-section h2 {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 30px 15px;
+  }
+  
+  .hero h2 {
+    font-size: 1.5em;
+  }
+  
+  .featured-section {
+    padding: 20px 10px;
+  }
+}
+
 /* Responsive design - adjust for different screen sizes */
 
 /* Tablets: 2 columns */
